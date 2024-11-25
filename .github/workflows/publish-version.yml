@@ -131,7 +131,7 @@ jobs:
         run: mv release/*/stacks-wallet* .
 
       - name: Download release-notes.txt from create-version workflow
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: create-version.yml
           name: release-notes
